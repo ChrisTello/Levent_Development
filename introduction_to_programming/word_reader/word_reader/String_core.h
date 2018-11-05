@@ -18,7 +18,12 @@ namespace Str_Ops
 
 	int length(const char *src)
 	{
-		//????
-		return 0;
+		int lenght = 0;
+		for (;;)
+		{
+			if (src[lenght] == 0) break;
+			lenght++;
+		}
+		return lenght;
 	}
 }
